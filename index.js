@@ -13,7 +13,7 @@ const sendInvite = (email, password) => {
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: process.env.SMTP_USER,
+            user: process.env.SMTP_USERNAME,
             pass: process.env.SMTP_PASSWORD
         }
     });
